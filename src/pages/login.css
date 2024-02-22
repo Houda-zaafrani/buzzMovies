@@ -1,0 +1,266 @@
+/*===========
+login
+=============*/
+.login {
+  margin: auto auto;
+  line-height: 1.6;
+  /* width: 100%; */
+  font-family: inherit;
+}
+/*=========
+animation
+===========*/
+@keyframes borderAnimation {
+  0% {
+    border-color: #007bff;
+  }
+  25% {
+    border-color: #ff0000;
+  }
+  50% {
+    border-color: #00ff00;
+  }
+  75% {
+    border-color: #ff00ff;
+  }
+  100% {
+    border-color: #007bff;
+  }
+}
+
+/*=========
+container login
+===========*/
+.container-login {
+  /* max-width: 30%; */
+  background-color: rgb(216, 221, 226);
+  border: 4px solid;
+  border-radius: 2rem;
+  box-shadow: 0 0 30px rgba(6, 82, 247, 0.74);
+  animation: borderAnimation 4s linear infinite;
+  padding: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width :370px) {
+  .container-login {
+    width : 80%
+  }
+}
+/*=====================
+form container of login
+=====================*/
+.form-container-login {
+  height: 19.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #002fff;
+  font-weight: 700;
+}
+
+/*************container title*********/
+
+.title-login {
+  margin: 0;
+  padding: 0;
+  height: 15%;
+  color: #002fff;
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px #2510a06b, 2px 2px 3px #110f18;
+  position: relative;
+  top: -14px;
+}
+
+/*=====================
+input and label
+========================*/
+
+.inputBox_login {
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  font-size: 1.1rem;
+}
+/******** input**********/
+input {
+  border: none;
+}
+/***********input*******/
+.email-input,
+.password-input-login {
+  width: 90%;
+  background: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  /* margin-top: 5px; */
+  box-shadow: #baadf5 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+  font-size: 1rem;
+}
+.email-input:focus,
+.password-input-login:focus {
+  outline: none;
+  border-inline: 2px solid #002fff;
+}
+.input_and_icon {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconlabel-pass {
+  padding-bottom: 0.1rem;
+}
+/*===================
+icon ,input password
+====================*/
+
+/**********container eye*********/
+.eye_login {
+  height: 2.5rem;
+  cursor: pointer;
+  color: rgb(177, 172, 172);
+  background-color: transparent;
+  width: 1.5rem;
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.eye_login:hover {
+  color: rgba(58, 56, 56, 0.589);
+}
+/*===================
+responcive icon eye
+====================*/
+@media (max-width: 300px) {
+  .icon-eye-log {
+    height: 1.5rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-eye-log {
+    height: 2rem;
+  }
+}
+/*===================
+boutton sign up
+====================*/
+.Button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.input-button {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.6em 1.2em;
+  margin-bottom: .5rem;
+  display: inline-block;
+  border-radius: 2em;
+  transition: all 0.2s;
+  border: 1px #002fff solid;
+  font-family: inherit;
+  font-weight: 600;
+  color: #002fff;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(49, 48, 48, 0.384);
+}
+.input-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(14, 12, 12, 0.445);
+}
+
+.input-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.input-button::after {
+  background-color: #fff;
+}
+
+.input-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+/*************
+alerte
+*************/
+.required-alert,
+.emailNotExist,
+.invalid-pass {
+  color: rgb(194, 13, 13);
+  background-color: rgba(240, 7, 7, 0.151);
+  border: 1px solid rgba(194, 3, 3, 0.856);
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+/***********buttom parag********/
+.link-signup{
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+span {
+  color: #2c1dfd;
+  text-align: center;
+  letter-spacing: 0.3px;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.link-to-register {
+  color: #06299c;
+  text-decoration: underline;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/*=====================
+toglle dark
+========================*/
+
+/***container***/
+.dark-login {
+  background-color: rgb(22, 4, 124);
+}
+
+.dark-login spam {
+  font-weight: 500;
+  color: white;
+}
+.dark-login .title-form-login {
+  color: white;
+}
+.dark-login .form-container-login {
+  color: white;
+}
+.dark-login .link-to-register {
+  color: white;
+}

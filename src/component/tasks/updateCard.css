@@ -1,0 +1,98 @@
+/*=================
+container modal
+==================*/
+.container-modal {
+  padding: 0;
+  margin: 1rem auto !important;
+  font-family: "Libre Baskerville", serif !important;
+  width: 100%;
+}
+/*****************
+header modal
+*****************/
+.headerModal {
+  border-bottom: 2px solid rgb(184, 178, 178);
+  padding: .3rem;
+}
+/*=============body of modal===============*/
+
+.bodyModal{
+padding: .5rem;
+}
+/**************
+container form
+=============*/
+
+/*****container inputs and errors****/
+.input-modal-update {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+/*********labels*******/
+.input-title-update label,
+.input-desc-update label {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+/******** conatiner inputs******/
+.input-title-update {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*********inputs*****/
+ .inputs,
+.inputs {
+  width: 15rem;
+  border-left: 2px solid rgb(104, 106, 114);
+   border-bottom: 2px solid rgb(104, 106, 114);
+
+  color: black;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  padding: 0.2em 0.4em;
+}
+
+/*====================
+container footer modal
+=====================*/
+
+.footer-update {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  border-top: 2px solid rgb(184, 178, 178);
+  margin-top: .5rem;
+}
+
+.close-update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.updateButton {
+  background-color: #1154b9;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  padding: 0.2em 0.4em;
+  margin: auto 0;
+}
+
+/*============
+dark update
+==============*/
+.dark-update .title-update {
+  background-color: rgb(240, 221, 186);
+  color: black;
+}

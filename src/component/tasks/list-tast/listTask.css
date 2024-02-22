@@ -1,0 +1,20 @@
+/*******************
+container list task
+*******************/
+
+.listTas {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*==================
+responcice listtasks
+==================*/
+@media (max-width: 600px) {
+  .listTas {
+    flex-direction: row;
+  }
+}

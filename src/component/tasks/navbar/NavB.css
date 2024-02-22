@@ -1,0 +1,201 @@
+/*============
+navbar=============*/
+.nav_bar {
+  margin: 0;
+  padding: 0;
+  font-weight: 550;
+  letter-spacing: 1px;
+  font-family: inherit;
+  position: fixed;
+  top: 0;
+}
+
+/*======================
+container navbar 
+======================*/
+.container-nav {
+  width: 100%;
+  height: 3rem;
+  background-color: #1f41bc;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+/*=======================
+container left side
+========================*/
+
+.left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11.5rem;
+}
+
+.logo-nav {
+  width: 6rem;
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
+}
+
+/*=============================
+container right side
+=============================*/
+
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+/*====================
+normal menu:right side
+====================*/
+.not-res-menu {
+  display: block;
+}
+
+/*=============================
+mobile menue:right side
+=============================*/
+
+.container-menu {
+  display: none;
+  position: relative;
+  margin-top: 0.5rem;
+  width: 6rem;
+}
+
+.selected {
+  display: flex;
+  align-items: end;
+  margin-bottom: 2px;
+  margin-left: 0.3rem;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.selected span {
+  font-size: 1.1rem;
+  color: white;
+  padding-left: 0.3rem;
+}
+
+.menu-icon {
+  height: 2em;
+}
+
+/************list of menu*******/
+.container-menu .dropdown {
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f41bc;
+  padding: 0.4em 0 0.4em 0.3em;
+  border-radius: 0.4rem;
+  color: white;
+  opacity: 0;
+  visibility: none;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.container-menu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*************links**************/
+.res-link-nav-notAuth,
+.res-link-nav-auth {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.2em 0.3rem 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.res-link-nav-notAuth:hover,
+.res-link-nav-auth:hover {
+  background-color: rgba(12, 12, 15, 0.308);
+}
+
+/********** auth links*********/
+.nav-auth {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/********** notauth links*********/
+.nav-notAuth {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*******styling links auth and not auth*****/
+.link-nav-notAuth,
+.link-nav-auth {
+  text-decoration: none;
+  color: white;
+}
+
+/**********links hover and focus*********/
+
+.link-nav-notAuth:hover,
+.link-nav-auth:hover,
+.link-nav-notAuth:focus,
+.link-nav-auth:focus {
+  cursor: pointer;
+}
+
+/*=============================
+responcive menus
+=============================*/
+@media (max-width: 525px) {
+  .not-res-menu {
+    display: none;
+  }
+  .container-menu {
+    display: block;
+  }
+}
+
+/*******styling curent link*****/
+.current-page {
+  border-bottom: 2px solid white;
+  width: fit-content;
+}
+
+/*============
+log out
+=============*/
+.logout {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  height: 1.3rem;
+}
+
+.logout:hover,
+.logout:focus {
+  cursor: pointer;
+}
+
+/*=================
+styling toglle dark
+=================*/
+
+/***container dark******/
+.dark-nav {
+  background-color: rgb(22, 4, 124);
+}

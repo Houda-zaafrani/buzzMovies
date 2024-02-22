@@ -1,0 +1,87 @@
+/*=================
+Accordion container
+==================*/
+.container-task{
+ padding: 0;
+  margin: 1rem auto !important;
+  font-family: 'Lora', serif;
+  width: 100%;
+ font-size: 1.1rem;
+ box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+}
+
+/*=================
+responcive accordion container
+==================*/
+@media (max-width: 600px) {
+    .container-task{
+        width: 80%;
+    }
+}
+
+@media (max-width: 300px) {
+    .container-task{
+        width: 60%;
+    }
+}
+/*=================
+date
+==================*/
+.date{
+    padding-right: .2rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(197, 195, 40); */
+    width: 20rem;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+/*==========================
+responcive body of accordion
+==========================*/
+@media(max-width:600px){
+.date{
+    flex-direction: column;
+}
+}
+/*===================
+body of accordion
+====================*/
+.t-items{
+    display: flex;
+    justify-content: space-between ;
+    width: 20rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    width: 100%;
+}
+
+/****container of icons delete and update****/
+.container-awosome{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    /* background-color: blueviolet; */
+    width: 3.5rem;
+    height: 2rem;
+}
+
+.update-awsome{
+    color: blue;
+     cursor: pointer;
+}
+
+.delete-awsome{
+    color: red;
+    cursor: pointer;
+}
+/*******resize of icons*******/
+.update-awsome,
+.delete-awsome{
+    width: 80% ;
+    height: 80%;
+}
+

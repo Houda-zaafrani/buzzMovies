@@ -1,0 +1,46 @@
+/**********
+ modal
+**********/
+.delete-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: blue;
+}
+.btn-close {
+  background-color: red;
+  margin-right: 0.1rem !important;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}
+
+.modal-footer{
+   width: 100%;
+   margin-top: 0 !important;
+   padding: .2rem !important;
+}
+.icone-delete-todo {
+  height: 1.4rem;
+}
+.close-delete {
+  background-color: rgb(243, 7, 7);
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  padding: 0.2em 0.4em;
+}
+.awsome-delete {
+  height: 2rem;
+  padding: 0 !important;
+  color: green;
+    cursor: pointer;
+
+}

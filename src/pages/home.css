@@ -1,0 +1,219 @@
+/*===========
+container home
+=============*/
+.home {
+  width: 100%;
+  font-family: inherit;
+    line-height: 1.6;
+}
+
+/*===========
+toast container
+=============*/
+.listTasks {
+  width: 80%;
+  background-color: rgb(228, 244, 248);
+  margin: 3rem auto;
+  font-weight: 300;
+  border-radius: 1rem;
+}
+
+/*==============
+responcive toast
+==============*/
+@media (max-width: 600px) {
+  .listTasks {
+    /* width: 90% ; */
+  }
+}
+
+/*====================
+container toast header
+====================*/
+.toast-header {
+  font-size: 1.7rem;
+  color: #1f1d92;
+  font-weight: 00;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 0;
+}
+
+/*==========
+toast body
+============*/
+.container-toast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*====================
+container form 
+====================*/
+.form-container-home {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: #2c1dfd;
+
+}
+
+/*=======================
+responcive container form 
+========================*/
+@media(max-width:1000px){
+  .form-container-home{
+    width: 90%;
+  }
+}
+/**********container inputs********/
+.inputbox-home {
+  font-size: 1.5rem;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/************input of form*********/
+
+.label-home {
+  width: 90%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-left: .5rem;
+}
+.alertHome{
+  margin-top:.6rem ;
+  margin-bottom: 0;
+}
+/********button hover and focus********/
+.addTask {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: .38rem;
+}
+/*************button*********/
+.button {
+  position: relative;
+  width: 155px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(42, 93, 231);
+  background-color: rgb(7, 57, 192);
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: rgb(5, 42, 146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background-color: rgb(5, 42, 146);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+.separation-home {
+  border-bottom: 2px solid rgb(88, 88, 252);
+  width: 100%;
+}
+
+
+/*========
+loader
+==========*/
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgba(6, 48, 163, 0.815);
+  border-top-color: transparent;
+  animation: rot1 1.2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes rot1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/********************/
+.container-list {
+  width: 100%;
+}
+
+/******h1********/
+.container-list h1 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #1d3da5;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*===========================
+toggle to dark
+===========================*/
+/******toast*******/
+.dark-home .listTasks {
+  background-color: rgb(22, 4, 124);
+}
+
+.dark-home .toast-header {
+  background-color: white;
+}
+
+.dark-home h1 {
+  color: white;
+  font-weight: 500;
+}
