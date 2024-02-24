@@ -24,9 +24,7 @@ const Footerf = ({ isTogled }) => {
           <Link to="https://www.linkedin.com/in/houda-zaafrani-78215691/">
             <FontAwesomeIcon icon={faLinkedin} className="icons-img-footer" />
           </Link>
-          <Link to ="https://bitbucket.org/buzz-movie/workspace/overview/</div>">
-            <FontAwesomeIcon icon={faBitbucket} className="icons-img-footer" />
-          </Link>
+         
         </div>
       </div>
     </div>
